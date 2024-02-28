@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<script src="../js/jquery-3.7.1.js"></script>
+	<script>
+   		$(document).ready(function () {
+   			$('#all-check').change(function () {
+   				const chk = $(this).is(':checked');
+   				$('div input').attr('checked',chk);
+   			});
+   		});
+    </script>
+</head>
+<body>
+	<label><input type="checkbox" id="all-check">All</label>
+	<div id="check-item">
+		<input type="checkbox">
+		<label>A Option</label>
+		<input type="checkbox">
+		<label>B Option</label>
+		<input type="checkbox">
+		<label>C Option</label>
+	</div>
+</body>
+</html>
